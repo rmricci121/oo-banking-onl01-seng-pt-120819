@@ -18,7 +18,7 @@ class Transfer
     if sender.valid? == false 
        @status = "rejected"
        puts "Transaction rejected. Please check your account balance."
-      elsif @sender.balance < @amount
+      elsif sender.balance < @amount
       @status = "rejected"
       puts "Transaction rejected. Please check your account balance."
     elsif @status == "complete"
